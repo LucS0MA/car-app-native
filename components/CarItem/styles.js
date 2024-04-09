@@ -6,28 +6,35 @@ const windowHeight = Dimensions.get("window").height;
 const styles = StyleSheet.create({
   carContainer: {
     width: "100%",
-    height: windowHeight, // Utilisez la hauteur de l'écran
+    height: windowHeight,
   },
   titles: {
     marginTop: "30%",
     width: "100%",
     alignItems: "center",
+    color: "white",
   },
   title: {
     fontSize: 40,
     fontWeight: "500",
+    color: "white",
   },
   subtitleCTA: {
     textDecorationLine: "underline",
+    color: "white",
   },
   subtitle: {
     fontSize: 16,
-    color: "#5c5e62",
+    color: "white",
+    backgroundColor: "#171A20CC",
+    borderRadius: 20,
+    padding: 5,
+    alignItems: "center",
   },
 
   image: {
-    width: windowWidth, // Utilisez la largeur de l'écran
-    height: windowHeight, // Utilisez la hauteur de l'écran
+    width: windowWidth,
+    height: windowHeight,
     resizeMode: "cover",
     position: "absolute",
   },
