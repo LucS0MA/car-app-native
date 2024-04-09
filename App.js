@@ -2,8 +2,20 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 import CarList from "./components/CarList";
 import Header from "./components/Header";
+import { useFonts } from "expo-font";
 
 export default function App() {
+  const [loaded] = useFonts({
+    Display: require("./assets/fonts/Playfair Display.ttf"),
+    // MontserraM: require("./assets/fonts/Montserra Medium.ttf"),
+    // MontserraI: require("./assets/fonts/Montserra Thin.ttf"),
+    Antic: require("./assets/fonts/Antic Slab.ttf"),
+  });
+
+  if (!loaded) {
+    return null;
+  }
+
   return (
     <View style={styles.container}>
       <Header />
@@ -15,6 +27,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+    fontFamily: "Display",
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",

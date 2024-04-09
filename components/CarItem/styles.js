@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     fontSize: 40,
     fontWeight: "500",
     color: "white",
+    fontFamily: "Display",
   },
   subtitleCTA: {
     textDecorationLine: "underline",
@@ -30,6 +31,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     padding: 5,
     alignItems: "center",
+    fontFamily: "Antic",
   },
 
   image: {
