@@ -8,7 +8,7 @@ function CarItem(props) {
 
   return (
     <View style={styles.carContainer}>
-      <ImageBackground source={image} style={styles.image} />
+      <ImageBackground source={{ uri: image }} style={styles.image} />
 
       <View style={styles.titles}>
         <Text style={styles.title}>{name}</Text>

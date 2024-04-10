@@ -7,8 +7,6 @@ import { useFonts } from "expo-font";
 export default function App() {
   const [loaded] = useFonts({
     Display: require("./assets/fonts/Playfair Display.ttf"),
-    // MontserraM: require("./assets/fonts/Montserra Medium.ttf"),
-    // MontserraI: require("./assets/fonts/Montserra Thin.ttf"),
     Antic: require("./assets/fonts/Antic Slab.ttf"),
   });
 
